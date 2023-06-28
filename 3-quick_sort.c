@@ -15,7 +15,7 @@ int part(int *array, int s, int e, size_t size)
 	int i, j;
 
 	i = s - 1;
-	for(j = s; j <= (e - 1); j++)
+	for (j = s; j <= (e - 1); j++)
 	{
 		if (array[j] < pivot)
 		{
@@ -39,7 +39,7 @@ int part(int *array, int s, int e, size_t size)
  * @e: end
  * @size: size
  */
-void sort(int *array, int s,int e, size_t size)
+void sort(int *array, int s, int e, size_t size)
 {
 	int i;
 
@@ -58,6 +58,7 @@ void sort(int *array, int s,int e, size_t size)
 void quick_sort(int *array, size_t size)
 {
 	int i = 0, j = size - 1;
+
 	if (size <= 0)
 		return;
 	sort(array, i, j, size);
